@@ -22,14 +22,14 @@ const Box = styled(View)`
 `;
 
 interface AKAVProps {
-	children: [React.ReactNode];
-	background: string;
-	pl: number;
-	pr: number;
-	needsSTB: false | true;
+	children?: [React.ReactNode];
+	background?: string;
+	pl?: number;
+	pr?: number;
+	needsSTB?: false | true;
 	submitButton: React.ReactNode;
-	offset: number;
-	testID: string;
+	offset?: number;
+	testID?: string;
 }
 
 const AKAV = ({
