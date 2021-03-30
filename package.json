@@ -17,9 +17,9 @@
     "url": "https://github.com/ajw-m/AKAV/issues"
   },
   "homepage": "https://github.com/ajw-m/AKAV#readme",
-  "dependencies": {
+  "devDependencies": {
     "react": "^17.0.2",
-    "react-native": "^0.64.0",
+    "react-native": "^0.63.0",
     "styled-components": "^5.2.2"
   },
   "prettier": {
