@@ -22,7 +22,7 @@ const Box = styled(View)`
 `;
 
 interface AKAVProps {
-	children?: [React.ReactNode];
+	children?: React.ReactNode;
 	background?: string;
 	pl?: number;
 	pr?: number;
