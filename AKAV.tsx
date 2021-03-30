@@ -48,21 +48,14 @@ const AKAV = ({
 		if (!sv || !sv.current) return;
 		if (!needsSTB) return;
 		sv.current.scrollToEnd();
-		console.warn(sv);
-	};
-
-	const _keyboardDidHide = () => {
-		console.warn('Keyboard Hidden');
 	};
 
 	React.useEffect(() => {
 		Keyboard.addListener('keyboardWillShow', _keyboardDidShow);
-		Keyboard.addListener('keyboardDidHide', _keyboardDidHide);
 
 		// cleanup function
 		return () => {
 			Keyboard.removeListener('keyboardWillShow', _keyboardDidShow);
-			Keyboard.removeListener('keyboardDidHide', _keyboardDidHide);
 		};
 	}, []);
 
