@@ -1,0 +1,31 @@
+{
+  "name": "@ajxb/akav",
+  "version": "1.0.0",
+  "description": "actual keyboard avoiding view for React Native",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajw-m/AKAV.git"
+  },
+  "author": "AJW-M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajw-m/AKAV/issues"
+  },
+  "homepage": "https://github.com/ajw-m/AKAV#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.64.0",
+    "styled-components": "^5.2.2"
+  },
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  }
+}
