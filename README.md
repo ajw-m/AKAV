@@ -31,4 +31,4 @@ Prop | Description | Type | Default
 **`pl`** | Padding left of the `SafeAreaView` that contains the `children` | Number | 20
 **`pr`** | Padding right of the `SafeAreaView` that contains the `children` | Number | 20
 **`needsSTB`** | Does the `ScrollView` need to scroll to the bottom of the page when keyboard opens? (Useful in some edge cases) | Boolean | false
-**`offset`** | The `KeyboardAvoidingView` offset, (see [Documentation](https://reactnative.dev/docs/keyboardavoidingview#keyboardverticaloffset)) 
+**`offset`** | The `KeyboardAvoidingView` offset, (see [Documentation](https://reactnative.dev/docs/keyboardavoidingview#keyboardverticaloffset)) | Number | 100
