@@ -12,8 +12,9 @@ A universal view where the skelenton of the page is defined, and `action buttons
 
 ## Preview:
 
-![Keyboard Visible](https://github.com/ajw-m/AKAV/blob/main/assets/keyboardShown.png)
-![Keyboard Hidden](https://github.com/ajw-m/AKAV/blob/main/assets/keyboardHidden.png)
+Keyboard Shown | Keyboard Hidden
+:-------------------------:|:-------------------------:
+<img src="https://github.com/ajw-m/AKAV/blob/main/assets/keyboardShown.png" width="250"> | <img src="https://github.com/ajw-m/AKAV/blob/main/assets/keyboardHidden.png" width="250">
 
 ```es6
 import AKAV from '@ajxb/akav'
