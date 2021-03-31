@@ -1,2 +1,2 @@
-import AKAV from './AKAV';
+import { AKAV } from './AKAV';
 export default AKAV;

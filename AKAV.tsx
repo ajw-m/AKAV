@@ -86,4 +86,4 @@ const AKAV = ({
 	);
 };
 
-export default AKAV;
+export { AKAV };

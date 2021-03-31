@@ -1,6 +1,6 @@
 {
 	"name": "@ajxb/akav",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "actual keyboard avoiding view for React Native",
 	"main": "index.js",
 	"private": false,
