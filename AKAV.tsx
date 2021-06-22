@@ -29,9 +29,23 @@ interface AKAVProps {
 	needsSTB?: false | true;
 	submitButton: React.ReactNode;
 	offset?: number;
+	scrollOffset?: number;
 	testID?: string;
 }
 
+/**
+ * Actual Keyboard Avoiding View
+ * @param children
+ * @param background
+ * @param pl
+ * @param pr
+ * @param needsSTB
+ * @param submitButton
+ * @param offset
+ * @param scrollOffset
+ * @param testID
+ * @constructor
+ */
 const AKAV = ({
 	children,
 	background = '#FFF',
@@ -40,6 +54,7 @@ const AKAV = ({
 	needsSTB = false,
 	submitButton,
 	offset = 100,
+	scrollOffset = 0,
 	testID = '',
 }: AKAVProps) => {
 	let sv = React.useRef(null);
@@ -50,12 +65,19 @@ const AKAV = ({
 		sv.current.scrollToEnd();
 	};
 
+	const keyboardDidShow = () => {
+		if (!scrollOffset) return;
+		sv.current.scrollTo({ x: 0, y: scrollOffset, animated: true });
+	};
+
 	React.useEffect(() => {
 		Keyboard.addListener('keyboardWillShow', _keyboardDidShow);
+		Keyboard.addListener('keyboardDidShow', keyboardDidShow);
 
 		// cleanup function
 		return () => {
 			Keyboard.removeListener('keyboardWillShow', _keyboardDidShow);
+			Keyboard.removeListener('keyboardDidShow', keyboardDidShow);
 		};
 	}, []);
 
