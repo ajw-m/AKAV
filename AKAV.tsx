@@ -71,13 +71,19 @@ const AKAV = ({
 	};
 
 	React.useEffect(() => {
-		Keyboard.addListener('keyboardWillShow', _keyboardDidShow);
+		if (!scrollOffset) return;
 		Keyboard.addListener('keyboardDidShow', keyboardDidShow);
+		return () => {
+			Keyboard.removeListener('keyboardDidShow', keyboardDidShow);
+		};
+	}, [scrollOffset]);
+
+	React.useEffect(() => {
+		Keyboard.addListener('keyboardWillShow', _keyboardDidShow);
 
 		// cleanup function
 		return () => {
 			Keyboard.removeListener('keyboardWillShow', _keyboardDidShow);
-			Keyboard.removeListener('keyboardDidShow', keyboardDidShow);
 		};
 	}, []);
 
